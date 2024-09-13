@@ -61,6 +61,9 @@ function validarDados() {
   if (quantidade <= 0) {
     alert("Quantidade não pode ser igual ou menor que zero!");
     return false;
+  } else if (quantidade >= ate - de) {
+    alert("Quantidade de numeros solicitada maior que o intervalo definido.");
+    return false;
   } else {
     if (de >= ate) {
       alert(
